@@ -1,4 +1,6 @@
 config:
+  messages:
+    config-reloaded: "EssentialsZ configuration reloaded"
   message-templates:
     # Placeholders are surrounded with $, and replaced when used
     # MiniMessage is fully supported
