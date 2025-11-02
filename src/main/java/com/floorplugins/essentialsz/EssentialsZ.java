@@ -8,6 +8,7 @@ public final class EssentialsZ extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        saveDefaultConfig();
         registerCommands();
     }
 
