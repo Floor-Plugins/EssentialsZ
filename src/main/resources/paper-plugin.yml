@@ -1,0 +1,6 @@
+name: EssentialsZ
+version: '0.1.0'
+main: com.floorplugins.essentialsz.EssentialsZ
+api-version: '1.21'
+authors: [ Floor-Plugins ]
+description: The real essential plugin, no random commands (like /kittycannon, from EssentialsX)
