@@ -1,0 +1,31 @@
+config:
+  message-templates:
+    # Placeholders are surrounded with $, and replaced when used
+    # MiniMessage is fully supported
+    error: "<red>$message$</red>"
+    success: "<green>$message$</green>"
+
+# Command - Teleport Ask
+# Requests teleportation to another player
+tpa:
+  timeout-seconds: 120
+
+  # MiniMessage is fully supported and can still be used here
+  messages:
+    # Some messages (like this one) use a template from above, and do not need MiniMessage styling
+    only-players: "Only players can teleport to others"
+
+    # Some messages (like this one) have placeholders for dynamic or unknown values
+    # Placeholders are surrounded with $, and replaced when used
+    specify-player: "Please specify a player's name to teleport to, or $subcommands$"
+
+    teleport-self: "You cannot teleport to yourself"
+    no-requests: "You have no teleport requests to $action$"
+    offline-player: "That player is either offline or invalid"
+    request-sent: "Teleport request to $player$ sent! It is automatically denied after $timeout$"
+    request-received: "Teleport request from $player$ received! It is automatically denied after $timeout$. Use <yellow>/tpa accept $player$</yellow> or <yellow>/tpa deny $player$</yellow>"
+    request-accepted: "Accepted teleport request from $player$"
+    request-denied: "Denied teleport request from $player$"
+    request-accepted-by: "Your teleport request to $player$ was accepted! You will be teleported shortly"
+    request-denied-by: "Your teleport request to $player$ was denied"
+    request-canceled-old: "Your previous teleport requests to $player$ were canceled"

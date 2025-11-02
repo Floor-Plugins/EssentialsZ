@@ -12,7 +12,7 @@ public final class EssentialsZ extends JavaPlugin {
     }
 
     private void registerCommands() {
-        BasicCommand tpaCommand = new TpaCommand();
+        BasicCommand tpaCommand = new TpaCommand(this);
         registerCommand("tpa", tpaCommand);
     }
 }
